@@ -11,7 +11,8 @@ let continuationsRTS: Runtime | undefined;
 
 export function init(
   rts: Runtime,
-  opts: RuntimeOpts = parseRuntimeOpts(process.argv.slice(2))) {
+  opts: RuntimeOpts = parseRuntimeOpts(process.argv.slice(2)),
+  require: any) {
 
   continuationsRTS = rts;
 

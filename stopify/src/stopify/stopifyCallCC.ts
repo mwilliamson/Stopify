@@ -70,7 +70,7 @@ export const visitor: Visitor = {
                 t.callExpression(t.identifier('require'),
                   [t.stringLiteral('@stopify/stopify/dist/src/runtime/node')]),
                 t.identifier('init')),
-                [t.identifier('$__R')]))]));
+                [t.identifier('$__R'), t.identifier('undefined'), t.identifier('require')]))]));
     } else {
       // var $S = stopify.init($__R);
 
